@@ -1,33 +1,124 @@
 /** {*/
-  /*outline: 1px solid red;*/
+/*outline: 1px solid red;*/
 /*}*/
 
 body {
-    font-size: 0px;
+    font-family: "Playfair Display", non-serif;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.25);
 }
 
 header {
     background-color: #717171;
-}
-
-.menu {
-    margin: auto;
     text-align: center;
 }
 
-.menu__item {
-font-size: 18px;
-display: inline-block;
-width: 100px;
-height: 40px;
+h2 {
+    text-align: center;
 }
 
-.menu__item a {
-    padding: 20px;
+ul {
+    padding: 0px;
+    font-size: 0px;
+}
+
+.menu-nav {
+    margin: auto;
+    padding-top: 1px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.menu-nav li {
+    font-size: 18px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.menu-nav a {
+    display: inline-block;
+    padding: 10px 20px;
     text-decoration: none;
     color: #ffffff;
 }
-.menu__item a:hover {
+.menu-nav a:hover {
     background-color: #555555;
     outline: 1px solid #ffffff;
 }
+
+.wrapper-task1 {
+    background-color: rgba(80, 80, 80, 0.33);
+    margin: auto;
+    padding: 20px;
+    width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+}
+
+.wrapper-task2 {
+    background-color: rgba(80, 80, 80, 0.33);
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    width: 470px;
+    padding: 20px;
+}
+
+.wrapper-task3 {
+    background-color: rgba(80, 80, 80, 0.33);
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    width: 960px;
+}
+
+.wrapper-task4 {
+    background-color: rgba(80, 80, 80, 0.33);
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    padding-left: 40px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.wrapper-task3 li {
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    width: 470px;
+    font-size: 16px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.article__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.article__theme {
+    color: rgba(0, 0, 0, 0.52);
+}
+
+.article__text {
+}
+
+
