@@ -68,6 +68,10 @@ h2 {
     width: 960px;
 }
 
+.wrapper-task3 {
+    padding: 0px;
+}
+
 .wrapper-task4 {
     background-color: rgba(80, 80, 80, 0.33);
     margin: auto;
