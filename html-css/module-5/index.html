@@ -8,107 +8,144 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
 <header>
-    <nav class="menu-nav clearfix">
+    <nav class="menu-nav">
         <a href="#" class="site-logo">Mart</a>
         <ul class="menu-nav__list clearfix">
-            <li>Contact us</li>
-            <li>Blog</li>
-            <li>Shop</li>
-            <li>Page</li>
-            <li>About Us</li>
-            <li>Home</li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Home</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <h1 class="visually-hidden">Home Page</h1>
+    <h1 class="visually-hidden">Main page</h1>
     <div class="slider">
-        <button class="slider-ctrl slider-ctrl-prev"></button>
-        <button class="slider-ctrl slider-ctrl-next"></button>
-        <p class="slider-descr">AFFORDABLE PARIS TOURS
-        <p>CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-        </p>
+        <div class="wrapper-ctrl">
+            <button class="slider-ctrl slider-ctrl_prev"><span>PREV</span></button>
+            <button class="slider-ctrl slider-ctrl_next"><span>NEXT</span></button>
+        </div>
         <ul class="slides">
-            <li><img src="#" alt="some-girls"></li>
+            <li class="slides-item">
+                <img src="img/slides/slide4.jpg" alt="some image" class="slides-image">
+                <p class="slides-descr">AFFORDABLE PARIS TOURS<br>
+                    CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+            </li>
         </ul>
     </div>
-    <section class="wrapper-items">
+    <section class="product-section">
         <h2>New collection</h2>
-        <ul class="item-list clearfix">
-            <li class="item-list_elem">
-                <div class="item-interact">
-                    <ul>
-                        <li>
-                            <button>heart</button>
+        <ul class="products-list clearfix">
+            <li class="products-list-item">
+                <div class="overlay">
+                    <ul class="item-ctrl-list clearfix">
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Lke</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>arrows</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Arrows</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>clock</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Clock</span>
+                            </button>
                         </li>
                     </ul>
-                    <button class="cart">add to cart</button>
+                    <button class="item-cart">
+                        <span>Add to cart</span>
+                    </button>
                 </div>
-                <a href="#"><img src="./img/category-2.jpg" alt="" height="322" width="255">
-                    <p>Blue Tshirt<span>$26</span></p></a>
+                <img src="img/products/category-2.jpg" alt="Blue Tshirt" height="283" width="255">
+                <p class="item-name">Blue Tshirt<span>$26</span></p>
             </li>
-            <li class="item-list_elem">
-                <div class="item-interact">
-                    <ul>
-                        <li>
-                            <button>heart</button>
+            <li class="products-list-item">
+                <div class="overlay">
+                    <ul class="item-ctrl-list clearfix">
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Lke</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>arrows</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Arrows</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>clock</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Clock</span>
+                            </button>
                         </li>
                     </ul>
-                    <button class="cart">add to cart</button>
+                    <button class="item-cart">
+                        <span>Add to cart</span>
+                    </button>
                 </div>
-                <a href="#"><img src="./img/category-1.jpg" alt="" height="322" width="255">
-                    <p>WOMAN shirt<span>$31</span></p></a>
+                <img src="img/products/category-1.jpg" alt="WOMAN shirt" height="283" width="255">
+                <p class="item-name">WOMAN shirt<span>$31</span></p>
             </li>
-            <li class="item-list_elem">
-                <div class="item-interact">
-                    <ul>
-                        <li>
-                            <button>heart</button>
+            <li class="products-list-item">
+                <div class="overlay">
+                    <ul class="item-ctrl-list clearfix">
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Lke</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>arrows</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Arrows</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>clock</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Clock</span>
+                            </button>
                         </li>
                     </ul>
-                    <button class="cart">add to cart</button>
+                    <button class="item-cart">
+                        <span>Add to cart</span>
+                    </button>
                 </div>
-                <a href="#"><img src="./img/category-4.jpg" alt="" height="322" width="255">
-                    <p>YELLOW Tshirt<span>$21</span></p></a>
+                <img src="img/products/category-4.jpg" alt="YELLOW Tshirt" height="283" width="255">
+                <p class="item-name">YELLOW Tshirt<span>$21</span></p>
             </li>
-            <li class="item-list_elem">
-                <div class="item-interact">
-                    <ul>
-                        <li>
-                            <button>heart</button>
+            <li class="products-list-item">
+                <div class="overlay">
+                    <ul class="item-ctrl-list clearfix">
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Lke</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>arrows</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Arrows</span>
+                            </button>
                         </li>
-                        <li>
-                            <button>clock</button>
+                        <li class="item-ctrl">
+                            <button>
+                                <span class="visually-hidden">Clock</span>
+                            </button>
                         </li>
                     </ul>
-                    <button class="cart">add to cart</button>
+                    <button class="item-cart">
+                        <span>Add to cart</span>
+                    </button>
                 </div>
-                <a href="#"><img src="./img/category-3.jpg" alt="" height="322" width="255">
-                    <p>Cool lingerie<span>$56</span></p></a>
+                <img src="img/products/category-3.jpg" alt="Cool lingerie" height="283" width="255">
+                <p class="item-name">Cool lingerie<span>$56</span></p>
             </li>
         </ul>
     </section>
