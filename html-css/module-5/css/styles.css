@@ -273,6 +273,7 @@ font-size: 0;
 /*OVERLAY*/
 
 .overlay {
+    background-clip: content-box;
     position: absolute;
     top: 0;
     left: 0;
