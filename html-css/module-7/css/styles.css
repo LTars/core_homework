@@ -264,6 +264,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .contact-form *:required:valid {
