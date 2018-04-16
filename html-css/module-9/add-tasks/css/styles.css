@@ -69,9 +69,25 @@ h2 {
 .wrapper-task1 {
     background-color: rgba(80, 80, 80, 0.33);
     margin: auto;
-    padding: 20px;
-    width: 495px;
+    padding: 10px;
+    min-width: 320px;
     border: 1px solid rgba(0, 0, 0, 0.36);
+}
+
+.content {
+    background-color: #fbf281;
+}
+
+.sidebar {
+    background-color: #b8e986;
+}
+
+.sidebar,
+.content {
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 35px;
 }
 
 /*SECOND TASK*/
@@ -81,9 +97,36 @@ h2 {
     margin: auto;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.36);
-    width: 640px;
-    padding: 20px;
+    min-width: 320px;
+    padding: 10px;
 }
+
+.grid-item {
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 35px;
+    background-color: #f8d69d;
+}
+
+.wrapper-task2 .col:nth-child(2) .grid-item {background-color: #f89ea9}
+
+@media screen and (max-width: 767px){
+    .wrapper-task2 .col:nth-child(3) p {
+        color: #a5834a;
+    }
+}
+
+.wrapper-task3 {
+    background-color: rgba(80, 80, 80, 0.33);
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    min-width: 320px;
+    padding: 10px;
+}
+
+.wrapper-task3 .col:nth-child(2) .grid-item {background-color: #f89ea9}
 
 /*HOME BUTTONS*/
 
