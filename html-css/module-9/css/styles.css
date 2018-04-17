@@ -49,10 +49,6 @@ header {
     text-align: center;
 }
 
-header a {
-    color: #ffffff;
-}
-
 .nav-list {
     padding-top: 18px;
     display: flex;
@@ -67,6 +63,7 @@ header a {
     height: 36px;
     padding-top: 7px;
     border: 2px solid transparent;
+    color: #ffffff;
 }
 
 .nav-list li:nth-child(2) a {
@@ -77,6 +74,7 @@ header a {
 .logo {
     margin-bottom: 38px;
     font-size: 20px;
+    color: #ffffff;
 }
 
 .nav-bar + h2 {
@@ -101,6 +99,7 @@ header a {
     border-radius: 20px;
     background-color: #ff4d4f;
     text-align: center;
+    color: #ffffff;
 }
 
 /*CONTENT-PAGE*/
@@ -145,6 +144,7 @@ header a {
     border-radius: 20px;
     background-color: transparent;
     border: 2px solid #ff4d4f;
+    color: #FF4E50;
 }
 
 .partner-card > picture { position: relative;}
