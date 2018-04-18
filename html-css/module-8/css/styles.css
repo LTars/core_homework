@@ -218,6 +218,16 @@ header {
     .partner-card:nth-child(4) {order: 3;}
 }
 
+@media screen  and (min-width: 768px) and (max-width: 788px) {
+    header {
+        width: 100%;}
+    .content-page,
+    .partner-list {
+        width: 80%;
+        margin: auto;
+    }
+}
+
 @media screen  and (min-width: 940px) {
     body {background: #1a1915 url("../img/background/background-desktop.png") no-repeat top;}
     main {padding-bottom: 72px;}
