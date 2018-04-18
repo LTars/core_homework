@@ -222,11 +222,7 @@ header {
     body {background: #1a1915 url("../img/background/background-desktop.png") no-repeat top;}
     main {padding-bottom: 72px;}
 
-    /*HEADER*/
-    header {
-        width: 940px;
-    }
-
+    header,
     .content-page,
     .partner-list {
         width: 940px;
@@ -234,5 +230,13 @@ header {
 
     .partner-card {
         width: 220px;
+    }
+}
+
+@media screen  and (min-width: 940px) and (max-width: 959px) {
+    header,
+    .content-page,
+    .partner-list {
+        width: 100%;
     }
 }
