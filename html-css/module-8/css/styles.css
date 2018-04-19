@@ -186,106 +186,8 @@ a.see-more:hover {
 .partner-card picture:hover img,
 .partner-card picture:hover::after {
     transform: translate(14%, -12%);
-    /*    bottom: 5px;
-    right: -7px;*/
     box-shadow: 0 5px 17px 0 rgba(0,0,0,.5), 0 2px 4px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
 }
-/*.partner-card:nth-child(4) > picture:hover::after {background-position: 33px -15px;}*/
-
-
-
-/*@keyframes planeActive {
-    0% {
-        bottom: 0;
-        right: -3px;
-        transform: rotateZ(0);
-    }
-    5.88% {
-        bottom: 10px;
-        right: -9px;
-        transform: rotateZ(-0.0588turn);
-    }
-    11.76% {
-        bottom: 47px;
-        right: -18px;
-        transform: rotateZ(-0.1176turn);
-    }
-    17.64% {
-        bottom: 72px;
-        right: -9px;
-        transform: rotateZ(-0.1764turn);
-    }
-    23.52% {
-        bottom: 89px;
-        right: -3px;
-        transform: rotateZ(-0.2352turn);
-    }
-    29.41% {
-        bottom: 99px;
-        right: 9px;
-        transform: rotateZ(-0.2941turn);
-    }
-    35.29% {
-        bottom: 109px;
-        right: 45px;
-        transform: rotateZ(-0.3529turn);
-    }
-    41.17% {
-        bottom: 99px;
-        right: 72px;
-        transform: rotateZ(-0.4117turn);
-    }
-    47.05% {
-        bottom: 89px;
-        right: 88px;
-        transform: rotateZ(-0.4705turn);
-    }
-    52.94% {
-        bottom: 72px;
-        right: 92px;
-        transform: rotateZ(-0.5294turn);
-    }
-    58.82% {
-        bottom: 47px;
-        right: 99px;
-        transform: rotateZ(-0.5882turn);
-    }
-    64.7% {
-        bottom: 10px;
-        right: 93px;
-        transform: rotateZ(-0.647turn);
-    }
-    70.58% {
-        bottom: 0;
-        right: 88px;
-        transform: rotateZ(-0.7058turn);
-    }
-    76.47% {
-        bottom: -8px;
-        right: 72px;
-        transform: rotateZ(-0.7647turn);
-    }
-    82.35% {
-        bottom: -18px;
-        right: 45px;
-        transform: rotateZ(-0.8235turn);
-    }
-    88.23% {
-        bottom: -9px;
-        right: 9px;
-        transform: rotateZ(-0.8823turn);
-    }
-    94.11% {
-        bottom: -2px;
-        right: 0;
-        transform: rotateZ(-0.9411turn);
-    }
-    100% {
-        bottom: 0;
-        right: -3px;
-        transform: rotateZ(-1turn);
-    }
-}*/
 
 @keyframes tvFlip {
     0% {transform: translate(0,0) rotateZ(0);}
@@ -383,6 +285,7 @@ a.see-more:hover {
 .partner-card:nth-child(3) > picture:active::after {animation: drinkTea 1s;}
 .partner-card:nth-child(4) > picture:hover::after {animation: planeFarewell 1.5s ease-in-out 1;}
 .partner-card:nth-child(4) > picture:active::after {animation: planeFlip 1s infinite;}
+
 /*MEDIA BRAKE POINTS*/
 @media screen  and (min-width: 320px) and (max-width: 340px) {
     .content-page,
@@ -446,7 +349,6 @@ a.see-more:hover {
     header {
         width: 100%;}
 }
-
 
 @media screen  and (min-width: 940px) {
     body {background: #1a1915 url("../img/background/background-desktop.png") no-repeat top;}
