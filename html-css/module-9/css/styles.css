@@ -174,16 +174,18 @@ a.see-more:hover {
 
 /*MEDIA BRAKE POINTS*/
 
-@media screen  and (min-width: 320px) and (max-width: 340px) {
-    header {
-        width: 100%;}
-}
-
 @media screen and (max-width: 767px){
     .content-page {
         max-width: 320px;
         width: 320px;
     }
+}
+
+@media screen  and (min-width: 320px) and (max-width: 340px) {
+    .content-page,
+    header {
+        max-width: 100%;
+        width: 100%;}
 }
 
 @media screen and (min-width: 768px) {
