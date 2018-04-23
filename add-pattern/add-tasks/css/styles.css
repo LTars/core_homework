@@ -125,20 +125,3 @@ h2 {
     right: 95px;
     bottom: 30px;
 }
-
-.banner__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.banner__item {
-    float: left;
-}
-
-.banner {
-    width: 120px;
-    height: 60px;
-    background: #5240ff;
-    border: 1px solid palevioletred;
-}
