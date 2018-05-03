@@ -88,6 +88,7 @@ section {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .retina-back {
         background: url("https://placeimg.com/800/400/tech") no-repeat;
+        background-size: cover;
     }
 }
 
