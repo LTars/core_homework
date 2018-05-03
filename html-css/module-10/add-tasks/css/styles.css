@@ -39,6 +39,16 @@ h2 {
     text-align: center;
 }
 
+section {
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 441px;
+    height: 241px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    background-color: rgba(80, 80, 80, 0.33);
+}
+
 .menu-nav {
     margin: auto;
     padding-top: 1px;
@@ -53,36 +63,41 @@ h2 {
     display: inline-block;
 }
 
-.menu-nav a {
+.menu-nav a,
+.header a {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     color: #7199ff;
 }
-.menu-nav a:hover {
+.menu-nav a:hover,
+.header a:hover {
     background-color: #1d2055;
     outline: 1px solid #7e9eff;
 }
 
 /*FIRST TASK*/
 
-.wrapper-task1 {
-    background-color: rgba(80, 80, 80, 0.33);
-    margin: auto;
-    padding: 20px;
-    width: 495px;
-    border: 1px solid rgba(0, 0, 0, 0.36);
-}
-
 /*SECOND TASK*/
 
-.wrapper-task2 {
-    background-color: rgba(80, 80, 80, 0.33);
-    margin: auto;
+.retina-back {
+    width: 400px;
+    height: 200px;
+    background: rgba(80, 80, 80, 0.33) url("https://placeimg.com/400/200/tech") no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .retina-back {
+        background: url("https://placeimg.com/800/400/tech") no-repeat;
+    }
+}
+
+/*THIRD TASK*/
+
+.header {
     box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.36);
-    width: 640px;
     padding: 20px;
+    width: 400px;
+    height: 200px;
 }
 
 /*HOME BUTTONS*/
