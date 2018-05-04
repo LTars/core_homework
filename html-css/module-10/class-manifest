@@ -21,25 +21,24 @@ cta
 
 section.features
 features-list
-    features-list__item
-    features-item
+    features-list__item features-item
         features-item__title
         features-item__desc
 
 section.about
     about__desc
 team-list
-    team-list_item
-    member-card
-        member-card__wrapper
-        member-card__pic
-        member-card__title
-        member-card__post
+    team-list_item team-item
+    team-item
+        team-item__wrapper
+        team-item__pic
+        team-item__title
+        team-item__post
 
 
-social-links
-    social-links__item
-    social-links__link
+socials
+    socials__item
+    socials__link
 
 footer
 copy
