@@ -1,0 +1,49 @@
+body
+header
+list
+link
+btn
+    btn--nav-bar
+section-title
+    section-title--first-line
+
+nav-bar
+    nav-bar__logo
+    nav-bar__menu
+    nav-bar__item
+        nav-bar__item--btn
+    nav-bar__link
+
+greeting
+    greeting--first-line
+
+cta
+
+section.features
+features-list
+    features-list__item
+    features-item
+        features-item__title
+        features-item__desc
+
+section.about
+    about__desc
+team-list
+    team-list_item
+    member-card
+        member-card__wrapper
+        member-card__pic
+        member-card__title
+        member-card__post
+
+
+social-links
+    social-links__item
+    social-links__link
+
+footer
+copy
+    copy__link
+subscribe
+    subscribe__email
+    subscribe__submit

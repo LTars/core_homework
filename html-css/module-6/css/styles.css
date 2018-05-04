@@ -256,11 +256,11 @@ p.who-we-are__descr {
     box-shadow: #95e1d3 10px 10px;
 }
 
-.member:hover .social-links {
+.member:hover .socials {
     opacity: 1;
 }
 
-.social-links {
+.socials {
     display: flex;
     box-sizing: border-box;
     align-items: flex-start;
@@ -278,7 +278,7 @@ p.who-we-are__descr {
     font-size: 0;
 }
 
-.social-links a {
+.socials a {
     position: relative;
     display: block;
     box-sizing: border-box;
@@ -287,19 +287,19 @@ p.who-we-are__descr {
     background: #fce38a;
 }
 
-.social-links li:nth-child(-n + 3) > a {
+.socials li:nth-child(-n + 3) > a {
     border-right: 1px solid #f9bd86;
 }
 
-.social-links li:hover:nth-child(-n + 3) > a {
+.socials li:hover:nth-child(-n + 3) > a {
     border-right: 1px solid #b9bcb3;
 }
 
-.social-links li:hover > a {
+.socials li:hover > a {
     background: #95e1d3;
 }
 
-.social-links a::before {
+.socials a::before {
     content: '';
     display: block;
     position: absolute;
@@ -308,25 +308,25 @@ p.who-we-are__descr {
     transform: translate(-50%, -50%);
 }
 
-.social-links li:nth-child(1) > a::before {
+.socials li:nth-child(1) > a::before {
     background: url("../img/icons/social/facebook.png");
     width: 13px;
     height: 26px;
 }
 
-.social-links li:nth-child(2) > a::before {
+.socials li:nth-child(2) > a::before {
     background: url("../img/icons/social/twitter.png");
     width: 26px;
     height: 22px;
 }
 
-.social-links li:nth-child(3) > a::before {
+.socials li:nth-child(3) > a::before {
     background: url("../img/icons/social/pinterest.png");
     width: 21px;
     height: 26px;
 }
 
-.social-links li:nth-child(4) > a::before {
+.socials li:nth-child(4) > a::before {
     background: url("../img/icons/social/instagram.png");
     width: 26px;
     height: 26px;

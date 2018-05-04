@@ -5,96 +5,221 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:400,400i"
+          rel="stylesheet">
+    <title>Module 10</title>
 </head>
-<body>
-<header>
-    <h1 class="visually-hidden">Home page</h1>
+<body class="body">
+
+<header class="header">
     <nav class="nav-bar">
-        <ul class="nav-list">
-            <li class="nav-list__item"><a href="#">Log in</a></li>
-            <li class="nav-list__item"><a href="#">Sign in</a></li>
+        <a href="#" class="nav-bar__logo link">MoGo</a>
+        <ul class="nav-bar__menu list">
+            <li class="nav-bar__item"><a href="#about" class="nav-bar__link link">About</a></li>
+            <li class="nav-bar__item"><a href="#service" class="nav-bar__link link">Service</a></li>
+            <li class="nav-bar__item"><a href="#" class="nav-bar__link link">Work</a></li>
+            <li class="nav-bar__item"><a href="#" class="nav-bar__link link">Blog</a></li>
+            <li class="nav-bar__item"><a href="#contact" class="nav-bar__link link">Contact</a></li>
+            <li class="nav-bar__item--btn">
+                <button title="Cart" class="btn--nav-bar">Cart</button>
+            </li>
+            <li class="nav-bar__item--btn">
+                <button title="Search" class="btn--nav-bar">Search</button>
+            </li>
         </ul>
-        <a href="#" class="logo">URLAUBSGLÜCK</a>
     </nav>
-    <h2>Share your<br>holiday dreams</h2>
-    <p>And find the perfect partner to fullfill it</p>
-    <a class="go-link" href="#partners">Find your holiday partner</a>
+    <h1 class="greeting">
+        <p class="greeting--first-line">Creative Template</p>
+        Welcome<br>to MoGo
+    </h1>
+    <button class="cta btn">learn more</button>
 </header>
+
 <main>
-    <section class="container content-page">
-        <div class="row justify-content-center no-gutters">
-            <div class="col-12">
-                <h2>Meet a partner for your best holiday</h2>
-            </div>
-            <div class="col-12 col-md-8 col-lg-12 partner-list">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 partner-card">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <picture><img src="./img/fotos/bradley-hunter.jpg" alt="Bradley Hunter"></picture>
-                            </div>
-                            <div class="col-12">
-                                <h3 class="partner-name">Bradley Hunter</h3>
-                            </div>
-                            <div class="col-12">
-                                <p class="partner-descr">Based in Chicago. I love playing tennis and loud music.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 order-md-2 partner-card">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <picture><img src="./img/fotos/lucas-marsha.jpg" alt="Lucas Marsha"></picture>
-                            </div>
-                            <div class="col-12">
-                                <h3 class="partner-name">Lucas Marsha</h3>
-                            </div>
-                            <div class="col-12">
-                                <p class="partner-descr">I get my inspiration from nature and objects around me. I have
-                                    a passion to colours, typography and skateboards.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 order-md-1 partner-card">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <picture><img src="./img/fotos/heather-walker.jpg" alt="Heather Walker"></picture>
-                            </div>
-                            <div class="col-12">
-                                <h3 class="partner-name">Heather Walker</h3>
-                            </div>
-                            <div class="col-12">
-                                <p class="partner-descr">I'm a happy person that loves cats and climbing on mountains.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 order-md-3 partner-card">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <picture><img src="./img/fotos/bradley-hunter-female.jpg" alt="Bradley Hunter">
-                                </picture>
-                            </div>
-                            <div class="col-12">
-                                <h3 class="partner-name">Bradley Hunter</h3>
-                            </div>
-                            <div class="col-12">
-                                <p class="partner-descr">Based in Chicago. I love playing tennis and loud music.</p>
-                            </div>
-                        </div>
-                    </div>
+    <section id="service" class="features">
+        <h3 class="section-title">
+            <p class="section-title--first-line">We work with</p><br>
+            Amazing Services
+        </h3>
+        <ul class="features-list list">
+            <li class="features-list__item features-item">
+                <p class="features-item__title">Photography</p>
+                <p class="features-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+                    quo!</p>
+            </li>
+            <li class="features-list__item features-item">
+                <p class="features-item__title">Web Design</p>
+                <p class="features-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio,
+                    voluptatum?</p>
+            </li>
+            <li class="features-list__item features-item">
+                <p class="features-item__title">Creativity</p>
+                <p class="features-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+                    tempora?</p>
+            </li>
+            <li class="features-list__item features-item">
+                <p class="features-item__title">seo</p>
+                <p class="features-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
+                    eum.</p>
+            </li>
+            <li class="features-list__item features-item">
+                <p class="features-item__title">Css/Html</p>
+                <p class="features-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
+                    sunt.</p>
+            </li>
+            <li class="features-list__item features-item">
+                <p class="features-item__title">digital</p>
+                <p class="features-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
+                    quos.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="about" class="about">
+        <h3 class="section-title">
+            <p class="section-title--first-line">Who we are</p><br>
+            Meet our team
+        </h3>
+        <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut eligendi
+            exercitationem laborum
+            nobis, omnis perferendis quaerat quia quibusdam voluptates! Est eveniet fuga porro quidem saepe similique,
+            ut veritatis vitae.</p>
+        <ul class="team-list list">
+            <li class="team-list__item member-card">
+                <div class="member-card__wrapper">
+                    <img
+                            src="img/photos/matthew.jpg" alt="photo of Matthew Dix" width="380" height="470"
+                            srcset="img/photos/matthew@2x.jpg 2x"
+                            class="member-card__pic">
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                facebook</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                twitter</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-pinterest"></use>
+                                </svg>
+                                pinterest</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                instagram</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-12"><a href="" class="see-more">See other partners</a></div>
-        </div>
+                <p class="member-card__title">Matthew Dix</p>
+                <p class="member-card__post">Graphic Design</p>
+            </li>
+            <li class="team-list__item  member-card">
+                <div class="member-card__wrapper">
+                    <img
+                            src="img/photos/cris.jpg" alt="photo of Christopher Campbell" width="380" height="470"
+                            srcset="img/photos/cris@2x.jpg 2x"
+                            class="member-card__pic">
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                facebook</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                twitter</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-pinterest"></use>
+                                </svg>
+                                pinterest</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="member-card__title">Christopher Campbell</p>
+                <p class="member-card__post">Branding/UX design</p>
+            </li>
+            <li class="team-list__item  member-card">
+                <div class="member-card__wrapper">
+                    <img
+                            src="img/photos/michael.jpg" alt="photo of Michael Fertig" width="380" height="470"
+                            srcset="img/photos/michael@2x.jpg 2x"
+                            class="member-card__pic">
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="27px">
+                                    <use href="img/icons/svg/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                facebook</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                twitter</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-pinterest"></use>
+                                </svg>
+                                pinterest</a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" rel="noreferrer" class="socials__link link">
+                                <svg class="socials__icon" width="26px" height="26px">
+                                    <use href="img/icons/svg/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="member-card__title">Michael Fertig</p>
+                <p class="member-card__post">Developer</p>
+            </li>
+        </ul>
     </section>
 </main>
+
+<a href="https://ltars.github.io/goit-fe-course/index.html" class="back-button link">LT</a>
+
+<footer class="footer">
+    <p class="copy">&#169; 2016 MoGo free PSD template by <a href="#" target="_blank" rel="noreferrer"
+                                                             class="copy__link link">Laaqiq</a></p>
+    <form action="#" id="contact" class="subscribe">
+        <input class="subscribe__email" type="email" name="email" placeholder="Your Email..." required>
+        <button class="subscribe__submit" type="submit">Subscribe</button>
+    </form>
+</footer>
 </body>
 </html>
 
