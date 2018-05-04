@@ -39,6 +39,7 @@ team-list
 socials
     socials__item
     socials__link
+    socials__icon
 
 footer
 copy
