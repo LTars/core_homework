@@ -147,7 +147,7 @@ header {
     border: 2px solid #ff4d4f;
     color: #FF4E50;
 }
-
+.partner-card picture {display: inline-block;}
 .partner-card picture,
 .partner-card picture::after,
 .partner-card img {
