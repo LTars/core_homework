@@ -1,27 +1,20 @@
-/*GLOBAL RULES*/
-
-/*
-* {
-outline: 1px solid red;
-}
-*/
+/** {*/
+/*outline: 1px solid red;*/
+/*}*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
+    position:    absolute;
+    width:       1px;
+    height:      1px;
+    margin:      -1px;
+    border:      0;
+    padding:     0;
     white-space: nowrap;
-
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    clip-path:   inset(100%);
+    clip:        rect(0 0 0 0);
+    overflow:    hidden;
 }
 
 body {
@@ -31,12 +24,12 @@ body {
 }
 
 header {
-    background-color: #2f4a71;
+    background-color: #717171;
     text-align: center;
 }
 
-h2 {
-    text-align: center;
+main {
+    padding-bottom: 20px;
 }
 
 .main__menu {
@@ -107,28 +100,112 @@ h2 {
     color: #ffffff;
 }
 
-/*FIRST TASK*/
+h2 {
+    text-align: center;
+}
+
+.menu-nav {
+    margin: auto;
+    padding-top: 1px;
+    padding-left: 0px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.menu-nav li {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.menu-nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.menu-nav a:hover {
+    background-color: #555555;
+    outline: 1px solid #ffffff;
+}
 
 .wrapper-task1 {
     background-color: rgba(80, 80, 80, 0.33);
     margin: auto;
     padding: 20px;
-    width: 495px;
+    width: 600px;
     border: 1px solid rgba(0, 0, 0, 0.36);
 }
-
-/*SECOND TASK*/
 
 .wrapper-task2 {
     background-color: rgba(80, 80, 80, 0.33);
     margin: auto;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.36);
-    width: 640px;
+    width: 470px;
     padding: 20px;
 }
 
-/*HOME BUTTONS*/
+.wrapper-task3 {
+    background-color: rgba(80, 80, 80, 0.33);
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    width: 960px;
+}
+
+.wrapper-task3 ul {
+    padding: 0px;
+}
+
+.wrapper-task4 {
+    background-color: rgba(80, 80, 80, 0.33);
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    padding-left: 40px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.wrapper-task3 li {
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    width: 470px;
+    font-size: 16px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.article__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.article__theme {
+    color: rgba(0, 0, 0, 0.52);
+}
+
+.article__text {
+}
 
 
 .back-button,
@@ -155,6 +232,9 @@ h2 {
 
 .back-button {
     z-index: 1;
+}
+
+.cpen-button {
 }
 
 .back-button:hover {

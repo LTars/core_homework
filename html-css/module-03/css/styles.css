@@ -1,0 +1,169 @@
+/*
+* {
+    outline: 1px solid red;
+}
+*/
+
+body {
+	font-family:      "Playfair Display", non-serif;
+	font-size:        16px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+header {
+	text-align:       center;
+	background-color: rgb(255, 255, 255);
+}
+
+
+
+.menu-list {
+	margin:       auto auto 54px auto;
+	padding-left: 0px;
+}
+
+.menu-list li {
+	display:         inline-block;
+	text-decoration: none;
+	margin-right:    56px;
+}
+
+.menu-list li:last-of-type {
+	margin: 0;
+}
+
+.menu-list a {
+	display:         inline-block;
+	text-decoration: none;
+	text-transform:  uppercase;
+	vertical-align:  baseline;
+	width:           113px;
+	height:          auto;
+	padding:         18px 0;
+	font-size:       14px;
+	line-height:     24px;
+	color:           rgb(98, 98, 98);
+}
+
+.menu-list a:hover {
+	color: rgb(3, 169, 244);
+}
+
+main {
+	border:           1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	font-size:        0px;
+	font-family:      "Playfair Display", non-serif;
+	min-height:       100vh;
+	margin:           57px;
+	padding:          1px 0px 20px;
+}
+
+.item-list {
+	margin:  auto auto 38px auto;
+	width:   903px;
+	padding: 0px;
+}
+
+.item-list li {
+	display:        inline-block;
+	width:          421px;
+	vertical-align: top;
+}
+
+.item-list li:nth-child(2n-1) {
+	margin-right: 61px;
+}
+
+.item-list__theme {
+	font-family: "Ubuntu";
+	font-size:   14px;
+	line-height: 17px;
+	color:       rgb(180, 173, 158);
+}
+
+.item-list__title {
+	font-size:   30px;
+	line-height: 36px;
+	color:       rgb(98, 98, 98);
+}
+
+.item-list__text {
+	font-size:   14px;
+	line-height: 24px;
+	color:       rgb(98, 98, 98);
+}
+
+.load-button {
+	text-align:  center;
+	font-size:   20px;
+	line-height: 24px;
+}
+
+.load-button button {
+	background-color: rgb(255, 255, 255); /* Green */
+	border:           1px solid rgb(98, 98, 98);
+	text-align:       center;
+	text-decoration:  none;
+	display:          inline-block;
+	font-size:        16px;
+	width:            164px;
+	height:           60px;
+	cursor:           pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position:    absolute;
+	width:       1px;
+	height:      1px;
+	margin:      -1px;
+	border:      0;
+	padding:     0;
+	white-space: nowrap;
+	clip-path:   inset(100%);
+	clip:        rect(0 0 0 0);
+	overflow:    hidden;
+}
+
+.back-button,
+.task-button {
+	text-decoration: none;
+	color: #b0b8b9;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #555555;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+	text-align: center;
+	line-height: 60px;
+	transition: right 0.5s, bottom 0.7s;
+}
+
+.task-button:hover {
+	background-color: #717171;
+	color: #ffffff;
+}
+
+.back-button {
+	z-index: 1;
+}
+
+.task-button {
+}
+
+.back-button:hover {
+	background-color: #717171;
+	color: #ffffff;
+}
+
+.back-button:hover + .task-button,
+.task-button:hover {
+	transition: right 0.3s, bottom 0.3s;
+	right: 95px;
+	bottom: 30px;
+}

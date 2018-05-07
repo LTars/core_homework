@@ -371,7 +371,8 @@ input[type="radio"].visually-hidden {
 
 /*BACK HOME*/
 
-.back-button {
+.back-button,
+.task-button {
     text-decoration: none;
     color: #b0b8b9;
     position: fixed;
@@ -381,14 +382,32 @@ input[type="radio"].visually-hidden {
     height: 60px;
     border-radius: 50%;
     background-color: #555555;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
     text-align: center;
     line-height: 60px;
-    z-index: 1000;
+    transition: right 0.5s, bottom 0.7s;
+}
+
+.task-button:hover {
+    background-color: #717171;
+    color: #ffffff;
+}
+
+.back-button {
+    z-index: 1;
+}
+
+.task-button {
 }
 
 .back-button:hover {
     background-color: #717171;
     color: #ffffff;
+}
+
+.back-button:hover + .task-button,
+.task-button:hover {
+    transition: right 0.3s, bottom 0.3s;
+    right: 95px;
+    bottom: 30px;
 }

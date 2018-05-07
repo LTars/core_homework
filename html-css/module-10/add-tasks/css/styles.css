@@ -49,6 +49,75 @@ section {
     background-color: rgba(80, 80, 80, 0.33);
 }
 
+
+.main__menu {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: auto;
+	padding-top: 1px;
+	padding-left: 0;
+	text-align: center;
+	background-color: #717171;
+}
+
+.main__menu__item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	flex-basis: 130px;
+	height: 60px;
+	font-size: 18px;
+	text-align: center;
+	color: #d4dcdd;
+	border: 1px solid transparent;
+}
+
+.main__menu__item:hover {
+	background-color: #555555;
+	border: 1px solid #a1a1a1;
+	color: #ffffff;
+}
+
+.main__menu__item:hover > .main__sub-menu {
+	display: block;
+}
+
+.main__sub-menu {
+	display: none;
+	position: absolute;
+	top: 59px;
+	z-index: 1;
+	list-style: none;
+	padding: 0;
+	border: 1px solid rgb(149, 149, 149);
+}
+
+.main__sub-menu__item {
+	width: 120px;
+	box-sizing: border-box;
+}
+
+.main__sub-menu__link {
+	display: inline-block;
+	border: 1px solid transparent;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 45px;
+	width: 120px;
+	height: 45px;
+	background-color: #717171;
+	color: #d4dcdd;
+}
+
+.main__sub-menu__link:hover {
+	background-color: #555555;
+	color: #ffffff;
+}
+
 .menu-nav {
     margin: auto;
     padding-top: 1px;

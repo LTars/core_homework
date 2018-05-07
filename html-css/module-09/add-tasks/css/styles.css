@@ -1,0 +1,213 @@
+/*GLOBAL RULES*/
+
+/*
+* {
+outline: 1px solid red;
+}
+*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position:    absolute;
+	width:       1px;
+	height:      1px;
+	margin:      -1px;
+	border:      0;
+	padding:     0;
+	white-space: nowrap;
+	clip-path:   inset(100%);
+	clip:        rect(0 0 0 0);
+	overflow:    hidden;
+}
+
+body {
+	font-family:      "Playfair Display", non-serif;
+	font-size:        16px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+header {
+	background-color: #2f4a71;
+	text-align:       center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.main__menu {
+	list-style:       none;
+	display:          flex;
+	justify-content:  space-around;
+	flex-wrap:        wrap;
+	margin:           auto auto 30px;
+	padding-top:      1px;
+	padding-left:     0;
+	text-align:       center;
+	background-color: #717171;
+}
+
+.main__menu__item {
+	position:        relative;
+	display:         flex;
+	justify-content: center;
+	list-style:      none;
+	padding:         0;
+	flex-basis:      130px;
+	height:          60px;
+	font-size:       18px;
+	text-align:      center;
+	color:           #d4dcdd;
+	border:          1px solid transparent;
+}
+
+.main__menu__item p {
+	margin: auto;
+}
+
+.main__menu__item:hover {
+	background-color: #555555;
+	border:           1px solid #a1a1a1;
+	color:            #ffffff;
+}
+
+.main__menu__item:hover > .main__sub-menu {
+	display: block;
+}
+
+.main__sub-menu {
+	display:    none;
+	position:   absolute;
+	top:        59px;
+	z-index:    1;
+	list-style: none;
+	padding:    0;
+	border:     1px solid rgb(149, 149, 149);
+}
+
+.main__sub-menu__item {
+	width:      120px;
+	box-sizing: border-box;
+}
+
+.main__sub-menu__link {
+	display:          inline-block;
+	border:           1px solid transparent;
+	text-decoration:  none;
+	cursor:           pointer;
+	line-height:      45px;
+	width:            120px;
+	height:           45px;
+	background-color: #717171;
+	color:            #d4dcdd;
+}
+
+.main__sub-menu__link:hover {
+	background-color: #555555;
+	color:            #ffffff;
+}
+
+/*FIRST TASK*/
+
+.wrapper-task1 {
+	background-color: rgba(80, 80, 80, 0.33);
+	margin:           30px auto;
+	padding:          10px;
+	min-width:        320px;
+	border:           1px solid rgba(0, 0, 0, 0.36);
+}
+
+.content {
+	background-color: #fbf281;
+}
+
+.sidebar {
+	background-color: #b8e986;
+}
+
+.sidebar,
+.content {
+	height:      100px;
+	text-align:  center;
+	box-sizing:  border-box;
+	padding-top: 35px;
+}
+
+/*SECOND TASK*/
+
+.wrapper-task2 {
+	background-color: rgba(80, 80, 80, 0.33);
+	margin:           30px auto;
+	box-sizing:       border-box;
+	border:           1px solid rgba(0, 0, 0, 0.36);
+	min-width:        320px;
+	padding:          10px;
+}
+
+.grid-item {
+	height:           100px;
+	text-align:       center;
+	box-sizing:       border-box;
+	padding-top:      35px;
+	background-color: #f8d69d;
+}
+
+.wrapper-task2 .col:nth-child(2) .grid-item {background-color: #f89ea9}
+
+@media screen and (max-width: 767px) {
+	.wrapper-task2 .col:nth-child(3) p {
+		color: #a5834a;
+	}
+}
+
+.wrapper-task3 {
+	background-color: rgba(80, 80, 80, 0.33);
+	margin:           30px auto;
+	box-sizing:       border-box;
+	border:           1px solid rgba(0, 0, 0, 0.36);
+	min-width:        320px;
+	padding:          10px;
+}
+
+.wrapper-task3 .col:nth-child(2) .grid-item {background-color: #f89ea9}
+
+/*HOME BUTTONS*/
+
+.back-button,
+.cpen-button {
+	text-decoration:  none;
+	color:            #b0b8b9;
+	position:         fixed;
+	bottom:           50px;
+	right:            50px;
+	width:            60px;
+	height:           60px;
+	border-radius:    50%;
+	background-color: #555555;
+	box-shadow:       0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+	text-align:       center;
+	line-height:      60px;
+	transition:       right 0.5s, bottom 0.7s;
+}
+
+.cpen-button:hover {
+	background-color: #717171;
+	color:            #ffffff;
+}
+
+.back-button {
+	z-index: 1;
+}
+
+.back-button:hover {
+	background-color: #717171;
+	color:            #ffffff;
+}
+
+.back-button:hover + .cpen-button,
+.cpen-button:hover {
+	transition: right 0.3s, bottom 0.3s;
+	right:      95px;
+	bottom:     30px;
+}
