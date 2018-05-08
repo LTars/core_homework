@@ -32,6 +32,15 @@
 	border:       1px solid #e7e7e7;
 	font-style:   italic;
 	color:        #cccccc;
+	outline: none;
+}
+
+.subscribe__email:valid {
+	border-bottom-color: #95e1d3;
+}
+
+.subscribe__email:focus:invalid {
+	border-bottom-color: #f38181;
 }
 
 .subscribe__submit {
@@ -42,4 +51,9 @@
 	background: #95e1d3;
 	border:     none;
 	color:      #ffffff;
+}
+
+.subscribe__submit:hover {
+	@extend %hover-anim;
+	opacity: 0.5;
 }

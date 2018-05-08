@@ -49,22 +49,22 @@
 		background: no-repeat center;
 	}
 	&:nth-child(1)::before {
-    @include features-icon(url("../img/icons/svg/clock.svg"), 32px, 32px)
+    @include features-icon("../img/icons/svg/clock.svg", 32px, 32px);
 	}
 	&:nth-child(2)::before {
-    @include features-icon(url("../img/icons/svg/graph.svg")
+    @include features-icon("../img/icons/svg/graph.svg");
 	}
 	&:nth-child(3)::before {
-    @include features-icon(url("../img/icons/svg/computer.svg", 32px, 29px)
+    @include features-icon("../img/icons/svg/computer.svg", 32px, 29px);
 	}
 	&:nth-child(4)::before {
-    @include features-icon(url("../img/icons/svg/book.svg", 32px, 32px)
+    @include features-icon("../img/icons/svg/book.svg", 32px, 32px);
 	}
 	&:nth-child(5)::before {
-    @include features-icon(url("../img/icons/svg/home.svg", 32px, 31px)
+    @include features-icon("../img/icons/svg/home.svg", 32px, 31px);
 	}
 	&:nth-child(6)::before {
-    @include features-icon(url("../img/icons/svg/frame.svg", 34px, 32px)
+    @include features-icon("../img/icons/svg/frame.svg", 34px, 32px);
 	}
 	&:not(:nth-last-child(-n + 3)) {
 		margin-bottom: 80px;

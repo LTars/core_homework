@@ -38,6 +38,14 @@
 		&:nth-last-child(2) .btn--nav-bar {
 			background: url("../img/icons/svg/cart.svg") no-repeat center;
 		}
+		&:hover {
+			&:nth-last-child(1) .btn--nav-bar {
+				background: url("../img/icons/svg/hovered/lens.svg") no-repeat center;
+			}
+			&:nth-last-child(2) .btn--nav-bar {
+				background: url("../img/icons/svg/hovered/cart.svg") no-repeat center;
+			}
+		}
 	}
 }
 
