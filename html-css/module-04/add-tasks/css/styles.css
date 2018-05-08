@@ -22,14 +22,8 @@ main {
     padding-bottom: 40px;
 }
 
-ul {
-    display: flex;
-    margin:     0;
-    padding:    0;
+.main__menu {
     list-style: none;
-}
-
-.menu {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -40,7 +34,7 @@ ul {
     background-color: #717171;
 }
 
-.menu__item {
+.main__menu__item {
     position: relative;
     display: flex;
     justify-content: center;
@@ -54,17 +48,17 @@ ul {
     border: 1px solid transparent;
 }
 
-.menu__item:hover {
+.main__menu__item:hover {
     background-color: #555555;
     border: 1px solid #a1a1a1;
     color: #ffffff;
 }
 
-.menu__item:hover > .sub-menu {
+.main__menu__item:hover > .main__sub-menu {
     display: block;
 }
 
-.sub-menu {
+.main__sub-menu {
     display: none;
     position: absolute;
     top: 59px;
@@ -74,12 +68,12 @@ ul {
     border: 1px solid rgb(149, 149, 149);
 }
 
-.sub-menu__item {
+.main__sub-menu__item {
     width: 120px;
     box-sizing: border-box;
 }
 
-.sub-menu__link {
+.main__sub-menu__link {
     display: inline-block;
     border: 1px solid transparent;
     text-decoration: none;
@@ -91,7 +85,7 @@ ul {
     color: #d4dcdd;
 }
 
-.sub-menu__link:hover {
+.main__sub-menu__link:hover {
     background-color: #555555;
     color: #ffffff;
 }
